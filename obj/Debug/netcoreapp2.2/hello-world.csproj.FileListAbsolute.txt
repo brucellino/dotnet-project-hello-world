@@ -1,0 +1,11 @@
+/home/becker/dotnet-projects/hello-world/bin/Debug/netcoreapp2.2/hello-world.deps.json
+/home/becker/dotnet-projects/hello-world/bin/Debug/netcoreapp2.2/hello-world.runtimeconfig.json
+/home/becker/dotnet-projects/hello-world/bin/Debug/netcoreapp2.2/hello-world.runtimeconfig.dev.json
+/home/becker/dotnet-projects/hello-world/bin/Debug/netcoreapp2.2/hello-world.dll
+/home/becker/dotnet-projects/hello-world/bin/Debug/netcoreapp2.2/hello-world.pdb
+/home/becker/dotnet-projects/hello-world/obj/Debug/netcoreapp2.2/hello-world.csprojAssemblyReference.cache
+/home/becker/dotnet-projects/hello-world/obj/Debug/netcoreapp2.2/hello-world.csproj.CoreCompileInputs.cache
+/home/becker/dotnet-projects/hello-world/obj/Debug/netcoreapp2.2/hello-world.AssemblyInfoInputs.cache
+/home/becker/dotnet-projects/hello-world/obj/Debug/netcoreapp2.2/hello-world.AssemblyInfo.cs
+/home/becker/dotnet-projects/hello-world/obj/Debug/netcoreapp2.2/hello-world.dll
+/home/becker/dotnet-projects/hello-world/obj/Debug/netcoreapp2.2/hello-world.pdb
