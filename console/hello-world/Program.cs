@@ -29,7 +29,7 @@ namespace hello_world {
 
     }
 
-    static void QuotientRemandiner() {
+    static void QuotientRemander() {
 
         int a = 7;
         int b = 4;
@@ -40,12 +40,35 @@ namespace hello_world {
         Console.WriteLine($"quotient {d}");
         Console.WriteLine($"remainder {e}");
     }
+
+    static void WorkWithDoubles() {
+      double max = double.MaxValue;
+      double min = double.MinValue;
+      Console.WriteLine($"The range of double is {min} to {max}.");
+      // Challenge WorkWithDoubles():
+      /*
+      Try other calculations with large numbers, small numbers, multiplication and division using the double type. Try more complicated calculations.
+      */
+      double a = 1.1000000000000000000;
+      double b = 1.500000001;
+      double c = a * b;
+      Console.WriteLine($"{a} times {b} is {c}");
+
+    }
+
+    static double Area(double r) {
+      return (double)(Math.PI)* r*r;
+    }
+
     static void Main(string[] args) {
       Console.WriteLine("Hello World!");
       Console.WriteLine("The time is " + DateTime.Now);
       Numbers();
       OrderOfPrecedence();
-      QuotientRemandiner();
+      QuotientRemander();
+      WorkWithDoubles();
+
+      Console.WriteLine(Area(2.5));
     }
   }
 }
