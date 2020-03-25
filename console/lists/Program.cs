@@ -7,11 +7,17 @@ namespace lists
   }
 
   class Program {
-    static void Main(string[] args) {
+    static void Strings() {
       var names = Globals.names;
       foreach (var name in names) {
         Console.WriteLine($"Hello {name.ToUpper()}!");
       }
+      Console.WriteLine();
+
+      names.Add("Maria");
+      names.Add("Bill");
+      names.Add("Ana");
+
       var index = names.IndexOf("Felipe");
       if (index == -1) {
         Console.WriteLine($"When an item is not found, IndexOf returns {index}");
@@ -30,6 +36,23 @@ namespace lists
       foreach (var name in names) {
         Console.WriteLine($"Hello {name.ToUpper()}!");
       }
+    }
+
+    static void Fib() {
+      var fibonacciNumbers = new List<int> {1,1};
+      var previous = fibonacciNumbers[fibonacciNumbers.Count -1 ];
+      var previous2 = fibonacciNumbers[fibonacciNumbers.Count -2 ];
+
+      fibonacciNumbers.Add(previous + previous2);
+
+      foreach(var item in fibonacciNumbers) {
+        Console.WriteLine(item);
+      }
+    }
+
+    static void Main(string[] args) {
+      Strings();
+      Fib();
     }
   }
 }
