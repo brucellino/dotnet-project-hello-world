@@ -7,6 +7,7 @@ This is a litte repo to help me go through the [C# tutorials](https://docs.micro
 1. console
    1. hello-world
    1. branches
+   1. lists
 
 ## Contributing
 
