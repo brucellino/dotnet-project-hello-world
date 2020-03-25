@@ -63,6 +63,18 @@ namespace classes
 
       allTransactions.Add(withdrawal);
     }
+
+    public string GetAccountHistory() {
+      var report = new System.Text.StringBuilder();
+
+      decimal balance = 0;
+      report.AppendLine("Date\tAmount\tBalance\tNote");
+      foreach (var item in allTransactions) {
+        balance += item.Amount;
+        report.AppendLine($"{item.Date.ToShortDateString()}\t{item.Amount}\t{balance}\t{item.Notes}");
+      }
+      return report.ToString();
+    }
   }
   class Program {
     static void Main(string[] args) {
@@ -74,6 +86,7 @@ namespace classes
       account.MakeDeposit(100, DateTime.Now, "Friend paid me back");
       Console.WriteLine(account.Balance);
 
+      Console.WriteLine(account.GetAccountHistory());
     }
   }
 }
