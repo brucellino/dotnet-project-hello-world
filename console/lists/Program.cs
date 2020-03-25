@@ -8,7 +8,8 @@ namespace lists
 
   class Program {
     static void Main(string[] args) {
-      foreach (var name in Globals.names) {
+      var names = Globals.names;
+      foreach (var name in names) {
         Console.WriteLine($"Hello {name.ToUpper()}!");
       }
     }
